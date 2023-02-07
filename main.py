@@ -39,28 +39,28 @@ def read_from_file(filename):
 
 global data, columns
 
-columns, data = read_from_file('data.csv')
+# columns, data = read_from_file('data.csv')
 
-print_data()
+# print_data()
 
-insert(get_line())
+# insert(get_line())
 
-print_data()
+# print_data()
 
-change_line()
+# change_line()
 
-print_data()
-
-write_to_file('data.csv')
-
-# columns=('id', 'name', 'lastname', 'age', 'height', 'weight')
-# data = [
-#     (1, 'Ivan', 'Ivanov', 14, 160, 50),
-#     (2, 'Sasha', 'Sidorov', 15, 210, 40),
-#     (3, 'Masha', 'Poradina', 30, 178, 70),
-#     (4, 'Timur', 'Korolev', 44, 160, 120)
-# ]
+# print_data()
 
 # write_to_file('data.csv')
 
-# print_data() # == print(columns, data) только красиво
+columns=('id', 'name', 'lastname', 'age', 'height', 'weight')
+data = [
+    (1, 'Ivan', 'Ivanov', 14, 160, 50),
+    (2, 'Sasha', 'Sidorov', 15, 210, 40),
+    (3, 'Masha', 'Poradina', 30, 178, 70),
+    (4, 'Timur', 'Korolev', 44, 160, 120)
+       ]
+
+write_to_file('data.csv')
+
+print_data() # == print(columns, data) только красиво
